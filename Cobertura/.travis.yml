@@ -8,6 +8,7 @@ jdk:
 
 script: 
    - mvn clean verify
+   - mvn cobertura:cobertura coveralls:report
    
 after_success:
-   - mvn clean test saga:coverage coveralls:report
+   - mvn clean cobertura:cobertura coveralls:report
