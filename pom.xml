@@ -3,4 +3,16 @@
   <groupId>manuel.bothner</groupId>
   <artifactId>SE_Java-TravisCI-Coveralls</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <build>
+  	<plugins>
+  		<plugin>
+    		<groupId>org.eluder.coveralls</groupId>
+    		<artifactId>coveralls-maven-plugin</artifactId>
+    		<version>4.1.0</version>
+    		<configuration>
+        		<repoToken>8devGek2l8n13wZQpncyVI9b8TLU1bSjS</repoToken>
+    		</configuration>
+		</plugin>
+  	</plugins>
+  </build>
 </project>
