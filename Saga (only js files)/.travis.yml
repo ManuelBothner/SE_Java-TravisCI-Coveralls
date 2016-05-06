@@ -13,4 +13,4 @@ script:
    - mvn clean verify
    
 after_success:
-   - mvn clean test saga:coverage cobertura:cobertura coveralls:report
+   - mvn clean test saga:coverage coveralls:report
