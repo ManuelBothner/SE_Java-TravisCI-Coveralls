@@ -1,6 +1,5 @@
 package se_java_travisCI_coveralls;
 
-import static org.junit.Assert.assertEquals;
 
 //### IMPORTS ##############################################################################################################################
 
