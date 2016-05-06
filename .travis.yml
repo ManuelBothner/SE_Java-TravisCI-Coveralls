@@ -8,7 +8,7 @@ jdk:
 
 script: 
    - mvn clean verify
-   - mvn clean test jacoco:report coveralls:report
+   - mvn cobertura:cobertura coveralls:report
    
 after_success:
-   - mvn clean test jacoco:report coveralls:report
+   - mvn clean cobertura:cobertura coveralls:report
