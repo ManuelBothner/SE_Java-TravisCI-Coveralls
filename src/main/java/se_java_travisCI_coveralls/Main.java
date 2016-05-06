@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 	// TODO Auto-generated method stub
 		System.out.println("Hallo Welt");
-		System.
+		System.out.println("Now the bug is fixed");
 	}
 	
 
