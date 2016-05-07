@@ -4,6 +4,22 @@ public class Ball extends GeometricObject {
 
 	private double radius;
 	
+	public double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(double radius) {
+		
+		//If radius is negativ set it to 0:
+		if(radius < 0) {
+			this.radius = 0;
+		}
+		else {
+			this.radius = radius;
+		}
+		
+	}
+
 	public Ball(double radius) {
 		
 		//If radius is negativ set it to 0:

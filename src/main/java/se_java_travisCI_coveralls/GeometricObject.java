@@ -1,7 +1,6 @@
 package se_java_travisCI_coveralls;
 //### IMPORTS ##############################################################################################################################
-public abstract class GeometricObject {
-	
+abstract class GeometricObject {
 	
 	public abstract double getSurfaceArea();
 	

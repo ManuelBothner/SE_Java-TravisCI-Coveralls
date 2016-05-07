@@ -15,7 +15,7 @@ public class Main {
 	
 		System.out.println("The sum of a = " + a + " and b = " + b + " is " + sum);
 		
-		Ball ball = new Ball(2);
+		Ball ball = new Ball(3.7);
 		System.out.println(ball);
 	}
 	
