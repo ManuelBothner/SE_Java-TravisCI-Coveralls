@@ -6,8 +6,11 @@ language: java
 jdk:
    - oraclejdk8
 
+# container-based build:
+sudo: required
+
 script: 
    - mvn clean verify
    
 after_success:
-   - mvn clean test jacoco:report coveralls:report
+   - mvn clean test saga:coverage cobertura:cobertura coveralls:report

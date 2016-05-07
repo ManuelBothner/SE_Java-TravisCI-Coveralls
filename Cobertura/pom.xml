@@ -25,6 +25,16 @@
        		 	<maxmem>256m</maxmem>
         		<!-- aggregated reports for multi-module projects -->
         		<aggregate>true</aggregate>
+        		<!-- With the following lines you can exclude files from code coverage -->
+        		<!-- <instrumentation>
+        			<ignores>
+          				<ignore>com.example.boringcode.*</ignore>
+        			</ignores>
+        			<excludes>
+          				<exclude>com/example/dullcode/**/*.class</exclude>
+          				<exclude>com/example/**/*Test.class</exclude>
+        			</excludes>
+      			</instrumentation> -->
     		</configuration>
 		</plugin>
   	</plugins>

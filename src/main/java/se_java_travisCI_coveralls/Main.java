@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		//Calculate a sum of two integers:
-		int a = 10;
+		int a = 10;		// $COVERAGE-IGNORE$
 		int b = 20;
 		
 		int sum = Sum.sumInt(a, b);
