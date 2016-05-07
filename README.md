@@ -1,1 +1,1 @@
-!https://coveralls.io/repos/github/ManuelBothner/SE_Java-TravisCI-Coveralls/badge.svg?branch=master(CoverageStatus)!:https://coveralls.io/github/ManuelBothner/SE_Java-TravisCI-Coveralls?branch=master
+[![Coverage Status](https://coveralls.io/repos/github/ManuelBothner/SE_Java-TravisCI-Coveralls/badge.svg?branch=master(CoverageStatus)style=flat-square)](https://coveralls.io/github/ManuelBothner/SE_Java-TravisCI-Coveralls?branch=master)

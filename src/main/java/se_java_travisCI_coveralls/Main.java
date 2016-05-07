@@ -5,7 +5,6 @@ package se_java_travisCI_coveralls;
 
 public class Main {
 	
-	@CoverageIgnore
 	public static void main(String[] args) {
 
 		//Calculate a sum of two integers:
