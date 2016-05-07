@@ -1,6 +1,6 @@
 package se_java_travisCI_coveralls;
 //### IMPORTS ##############################################################################################################################
-public class Sum {
+public final class Sum {
     
 	private Sum() {}
 	
