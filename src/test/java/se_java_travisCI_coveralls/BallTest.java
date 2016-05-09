@@ -1,5 +1,7 @@
 package se_java_travisCI_coveralls;
 
+import se_java_travisCI_coveralls.Ball;
+
 import org.junit.Test;
 import org.junit.Before;
 import java.lang.reflect.Field;
@@ -44,6 +46,7 @@ public class BallTest {
 		Assert.assertEquals("The constructor of the Ball class has a failure", value , 0.0, 0);
 	}
 	
+	@Test
 	public void testGetter() throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException, SecurityException {
 		
 		//Set the attribute radius to a test value:
@@ -52,7 +55,8 @@ public class BallTest {
 	    radius.setDouble(this.ball, 3.43);
 		
 	    //Test if the getter method returns the right value:
-	    Assert.assertEquals("The getter method for radius has a failure", 3.42, this.ball.getRadius(), 0);
+	    Assert.assertEquals("The getter method for radius has a failure", 3.43, this.ball.getRadius(), 0);
+	    
 	}
 	
 	@Test
@@ -114,9 +118,21 @@ public class BallTest {
 		Assert.assertEquals("The getSurfaceAreaToVolumeRatio method in the parent class has a failure", Double.NaN, this.ball.getSurfaceAreaToVolumeRatio(), 0);
 	}
 	
+	@Test
+	public void testToString() {
+		
+		String string = "Object: Ball - Radius: 13.6 - Surface area: 2324.2759088312855 - Volume: 10536.717453368494 - Surface area to volume ratio: 0.22058823529411767";
+		
+		this.ball.setRadius(13.6);
+			
+		Assert.assertEquals("The setter method for radius has a failure", string, this.ball.toString());
+		
+	}
+	
 	@After
 	public void tearDown() {
 		this.ball = null;
 	}
+	
 }
 //### EOF ##################################################################################################################################
